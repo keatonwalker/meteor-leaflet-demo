@@ -1,0 +1,28 @@
+<head>
+  <title>Tower Coverage Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    {{> map}}
+</body>
+
+<template name="map">
+    <div id="container">
+      <h1 class="title">Tower Coverage Demo</h1>
+        <form class="edit-schedule-item">
+            <label>Lat</label>
+            <input type="textbox" class="latitude" value="" placeholder="Enter latitude (DD)">
+            <label>Long</label>
+            <input type="textbox" class="longitude" value="" placeholder="Enter longitude (DD)">
+            <label>Beam</label>
+            <input type="textbox" class="beam-width" value="" placeholder="Enter beam width (Deg)">
+            <label>Azimuth</label>
+            <input type="textbox" class="azimuth" value="" placeholder="Enter azimuth (Deg)">
+            <label>Range</label>
+            <input type="textbox" class="range" value="" placeholder="Enter range (Meters)">
+            <input type="submit" class="polygon-draw" value="create">
+        </form>
+      <div id="map" class="map"></div>
+    </div>
+</template>
